@@ -1,7 +1,27 @@
-/*VARIABLES
+/***********
+***COLORS***
 ************/
 
-/*Standard Multiply Buttons*/
+$mtRed: #e11b22;
+$mtWhite: #fff;
+$mtBlue: #018ab1;
+$mtbronze: #a27151;
+$mtSilver: #ccc;
+$mtPlatinum: #a4adaf;
+$mtGold: #ad8d55;
+$mtOffWhite: #d7d7d7;
+$mtLightGrey: #ccc;
+$mtMidGrey: #9c9c9c;
+$mtMedGrey: #666;
+$mtDarkGrey: #999;
+$mtBlack: #222;
+
+/*************
+***BUTTONS****
+**************/
+
+/*Standard Multiply Buttons
+***************************/
 
 $redBtnColor: #e11b22;
 $blueBtnColor: #018ab1;
@@ -10,7 +30,8 @@ $darkGreyBtnColor: #999;
 $lightGreyBtnColor: #ccc;
 $blackBtnColor: #222;
 
-/*Status Multiply Buttons*/
+/*Status Multiply Buttons
+*************************/
 
 $bronzeBtnColor:#a27151;
 $silverBtnColor: #ccc;
@@ -18,7 +39,8 @@ $platinumBtnColor: #a4adaf;
 $goldBtnColor: #ad8d55;
 $privateBtnColor: #e11b22;
 
-/*Dashboard Buttons*/
+/*Dashboard Buttons
+********************/
 
 $fWBtnColor: #006f78;
 /*Financial Wellness Score*/
@@ -32,90 +54,39 @@ $aDBtnColor: #0d8cb2;
 $sDBtnColor: #e11b22;
 /*Safe Dayz*/
 
-/****************************
-***Multiply Color Pallette***
-*****************************/
+/***************
+***NAVIGATION***
+***************/
 
-$mtRed:#e11b22;
-$mtWhite:#fff;
-$mtBlue:#018ab1;
-$mtbronze:#a27151;
-$mtSilver:#ccc;
-$mtPlatinum:#a4adaf;
-$mtGold:#ad8d55;
-$mtOffWhite:#d7d7d7;
-$mtLightGrey:#ccc;
-$mtMidGrey:#9c9c9c;
-$mtMedGrey:#666;
-$mtDarkGrey:#999;
-$mtBlack:#222;
+/***********
+***FOOTER***
+************/
 
-.mtRed{
-    background-color: $mtRed;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtWhite{
-    background-color: $mtWhite;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtBlue{
-    background-color: $mtBlue;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtbronze{
-    background-color: $mtbronze;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtSilver{
-    background-color: $mtSilver;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtPlatinum{
-    background-color: $mtPlatinum;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtGold{
-    background-color: $mtGold;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtOffWhite{
-    background-color: $mtOffWhite;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtLightGrey{
-    background-color: $mtLightGrey;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtMidGrey{
-    background-color: $mtMidGrey;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtMedGrey{
-    background-color: $mtMedGrey;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtDarkGrey{
-    background-color: $mtDarkGrey;
-    font-weight: bold;
-    padding: 3rem;
-}
-.mtBlack{
-    background-color: $mtBlack;
-    font-weight: bold;
-    padding: 3rem;
-    color: $mtWhite;
-}
+$socialBtnColor: #9c9c9c;
+/*i.e the social icons in the footer of the website*/
+
+$primaryNavBgColor: #ccc;
+/*i.e the color of the footer container*/
+
+/**********
+***LINKS***
+***********/
+
+$primaryLinkColor: #e11b22;
+$secondaryLinkColor: #999;
+$tertiaryLinkColor: #222;
+$quaternaryLinkColor: #666;
+
+/***************
+***BACKGROUND***
+****************/
+
+$whiteBgColor: #fff;
+$redBgColor: #e11b22;
+$primaryGreyBgColor: #ededed;
+$secondaryGreyBgColor: #d7d7d7;
+
+
 /*MULTIPLY BUTTON SHAPING AND ANIMATION
 **************************************/
 
@@ -276,6 +247,197 @@ $mtBlack:#222;
         background-color: $sDBtnColor;
         border: 1px solid $sDBtnColor;
         color: $whiteBtnColor;
+        text-decoration: none;
+    }
+}
+
+
+/*** COLOR PALLETTE ***
+***********************/
+
+.mtRed {
+    background-color: $mtRed;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtWhite {
+    background-color: $mtWhite;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtBlue {
+    background-color: $mtBlue;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtbronze {
+    background-color: $mtbronze;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtSilver {
+    background-color: $mtSilver;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtPlatinum {
+    background-color: $mtPlatinum;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtGold {
+    background-color: $mtGold;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtOffWhite {
+    background-color: $mtOffWhite;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtLightGrey {
+    background-color: $mtLightGrey;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtMidGrey {
+    background-color: $mtMidGrey;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtMedGrey {
+    background-color: $mtMedGrey;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtDarkGrey {
+    background-color: $mtDarkGrey;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.mtBlack {
+    background-color: $mtBlack;
+    font-weight: bold;
+    padding: 3rem;
+    color: $mtWhite;
+}
+
+/*** General Banner Styling ***
+*******************************/
+
+/*Multiply Ad Banner*/
+
+.multiplyBanner {
+    padding: 0px;
+
+}
+
+.bannerThumbnail {
+    position: relative;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.bannerCaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    color: $mtWhite;
+}
+
+.bannerCaption h1 {
+    color: $mtWhite;
+}
+
+.bannerCaption h3 {
+    color: $mtWhite;
+}
+
+/*** General Footer Styling ***
+*******************************/
+
+#stFooter {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $primaryNavBgColor;
+    font-size: 15px!important;
+    div {
+        div {
+            hr {
+                border: 0.5px solid $socialBtnColor;
+            }
+        }
+    }
+}
+
+.footerSiteMapIcon {
+    i.icn-rightarrow-icn {
+        font-size: 0.7rem;
+    }
+}
+
+.footer_siteMap {
+    nav {
+        ul {
+            li {
+                text-align: left;
+                padding-top: 0.5rem;
+                a {
+                    color: $quaternaryLinkColor;
+                    text-decoration: none;
+                    &:hover {
+                        color: $primaryLinkColor;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.stNavSelected div a {
+    color: $primaryLinkColor!important;
+    text-decoration: none;
+}
+
+.footerMenuText {
+    padding: 0px;
+    color: #222;
+    h4 {
+        font-weight: 600;
+    }
+}
+
+.footerAnchors {
+    font-weight: 300;
+    font-size: 15px;
+    color: $tertiaryLinkColor;
+    &:hover {
+        text-decoration: none;
+        color: $primaryLinkColor;
+        cursor: pointer;
+    }
+}
+
+.socialLinks {
+    font-size: 2.4rem;
+    a {
+        color: $socialBtnColor;
         text-decoration: none;
     }
 }
