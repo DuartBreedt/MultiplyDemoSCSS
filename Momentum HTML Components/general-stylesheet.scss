@@ -15,6 +15,7 @@ $mtMidGrey: #9c9c9c;
 $mtMedGrey: #666;
 $mtDarkGrey: #999;
 $mtBlack: #222;
+$mtOrange: #e27100;
 
 /*************
 ***BUTTONS****
@@ -29,6 +30,7 @@ $whiteBtnColor: #fff;
 $darkGreyBtnColor: #999;
 $lightGreyBtnColor: #ccc;
 $blackBtnColor: #222;
+$orangeBtnColor: #e27100;
 
 /*Status Multiply Buttons
 *************************/
@@ -86,23 +88,30 @@ $redBgColor: #e11b22;
 $primaryGreyBgColor: #ededed;
 $secondaryGreyBgColor: #d7d7d7;
 
+/********************
+***SHAPE VARIABLES***
+*********************/
+
+$stdBorderRadius: 50px;
+
 
 /*MULTIPLY BUTTON SHAPING AND ANIMATION
 **************************************/
 
-.btn {
-    border-radius: 50px;
+.mtBtn {
+    border-radius: $stdBorderRadius;
     text-shadow: none;
-    /*text-transform: uppercase;*/
     padding: 10px 40px;
     transition: 0.5s;
+    min-width: 13rem;
+    border: 1px solid transparent;
     &:hover {
-        border-radius: 50px;
+        border-radius: $stdBorderRadius;
         text-shadow: none;
         padding: 10px 40px;
         transition: 0.5s;
+        min-width: 13rem;
     }
-
 }
 
 /*STANDARD MULTIPLY BUTTONS
@@ -251,6 +260,22 @@ $secondaryGreyBgColor: #d7d7d7;
     }
 }
 
+/*Other Multiply Buttons
+************************/
+
+.mtOrangeBtn {
+
+    background-color: $orangeBtnColor;
+    border: 1px solid $orangeBtnColor;
+    color: $whiteBtnColor;
+    &:hover {
+        background-color: $whiteBtnColor;
+        border: 1px solid $orangeBtnColor;
+        color: $orangeBtnColor;
+        text-decoration: none;
+    }
+}
+
 
 /*** COLOR PALLETTE ***
 ***********************/
@@ -332,6 +357,12 @@ $secondaryGreyBgColor: #d7d7d7;
     font-weight: bold;
     padding: 3rem;
     color: $mtWhite;
+}
+
+.mtOrange {
+    background-color: $mtOrange;
+    font-weight: bold;
+    padding: 3rem;
 }
 
 /*** General Banner Styling ***
@@ -441,3 +472,105 @@ $secondaryGreyBgColor: #d7d7d7;
         text-decoration: none;
     }
 }
+
+/******************
+Multiply Ad Banner*/
+
+.multiplyBanner {
+    padding: 0px!important;
+    width: 100%;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.bannerThumbnail {
+    position: relative;
+    img {
+        display: block;
+        width: 100%!important;
+        height: auto;
+    }
+}
+
+.bannerTitle h1 {
+    position: absolute;
+    top: 5%;
+    color: $mtWhite;
+}
+
+.bannerSubTitle h3 p {
+    position: absolute;
+    top: 8rem;
+    color: $mtWhite;
+    font-size: 1rem;
+}
+
+.bannerButton a {
+    position: absolute;
+    top: 12rem;
+}
+
+@media screen and (max-width: 1201px) {
+
+    .bannerButton a {
+        position: relative;
+        top: 0px;
+        margin-top: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 843px) {
+
+    .bannerSubTitle h3 p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 755px) {
+
+    .bannerTitle h1 {
+        font-size: 1.5rem;
+    }
+    .bannerSubTitle h3 p {
+        top: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .bannerSubTitle h3 p {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .bannerTitle h1 {
+        font-size: 1rem;
+    }
+
+}
+
+/*Multiply Ad Banner
+********************/
+
+/*Headings & Titles
+*******************/
+
+.titleRed {
+    color: $mtRed;
+}
+
+.titleBlue {
+    color: $mtBlue;
+}
+
+.titleGrey {
+    color: $mtMedGrey;
+}
+
+/*******************
+Headings & Titles*/
