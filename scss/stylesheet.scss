@@ -417,7 +417,30 @@ $secondaryGreyBgColor: #d7d7d7;
 }
 
 .titleGrey {
-    color: $mtMedGrey;
+    color: $mtLightGrey;
+}
+
+.hrRedLight {
+    border-color: $mtRed;
+}
+
+.hrBlueLight {
+    border-color: $mtBlue;
+}
+
+.hrGreyLight {
+    border-color: $mtDarkGrey;
+}
+.hrRedHeavy {
+    border: 1px solid $mtRed;
+}
+
+.hrBlueHeavy {
+    border: 1px solid $mtBlue;
+}
+
+.hrGreyHeavy {
+    border: 1px solid $mtLightGrey;
 }
 
 /********************************************************************************************************************************************************/
@@ -733,3 +756,27 @@ Content Logos*/
 ***************/
 
 /********************************************************************************************************************************************************/
+
+/**************
+Multiply Bars*/
+
+.mtRedBar {
+    background-color: $mtRed;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 25px;
+}
+
+.mtBlueBar {
+    background-color: $mtBlue;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 25px;
+}
+
+.mtGreyBar {
+    background-color: $mtDarkGrey;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 25px;
+}
