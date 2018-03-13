@@ -247,6 +247,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .primaryBtn a {
     background-color: $redBtnColor;
     color: $whiteBtnColor;
+    border: 1px solid $redBtnColor;
     &:hover {
         background-color: $whiteBtnColor;
         border: 1px solid $redBtnColor;
@@ -270,6 +271,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .tertiaryBtn a {
     background-color: $blueBtnColor;
     color: $whiteBtnColor;
+    border: 1px solid $blueBtnColor;
     &:hover {
         background-color: $whiteBtnColor;
         border: 1px solid $blueBtnColor;
@@ -284,6 +286,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .bronzeBtn a {
     background-color: $bronzeBtnColor;
     color: $whiteBtnColor;
+    border: 1px solid $bronzeBtnColor;
     &:hover {
         background-color: $whiteBtnColor;
         border: 1px solid $bronzeBtnColor;
@@ -295,6 +298,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .silverBtn a {
     background-color: $silverBtnColor;
     color: $whiteBtnColor;
+    border: 1px solid $darkGreyBtnColor;
     &:hover {
         background-color: $whiteBtnColor;
         border: 1px solid $darkGreyBtnColor;
@@ -306,6 +310,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .goldBtn a {
     background-color: $goldBtnColor;
     color: $whiteBtnColor;
+    border: 1px solid $goldBtnColor;
     &:hover {
         background-color: $whiteBtnColor;
         border: 1px solid $goldBtnColor;
@@ -317,6 +322,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .platinumBtn a {
     background-color: $platinumBtnColor;
     color: $whiteBtnColor;
+    border: 1px solid $platinumBtnColor;
     &:hover {
         background-color: $whiteBtnColor;
         border: 1px solid $platinumBtnColor;
@@ -328,6 +334,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .privateBtn a {
     background-color: $privateBtnColor;
     color: $whiteBtnColor;
+    border: 1px solid $privateBtnColor;
     &:hover {
         background-color: $whiteBtnColor;
         border: 1px solid $privateBtnColor;
