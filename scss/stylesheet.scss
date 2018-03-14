@@ -1,4 +1,5 @@
 /********************************************************************************************************************************************************/
+
 /***********
 ***COLORS***
 ************/
@@ -96,6 +97,13 @@ $secondaryGreyBgColor: #d7d7d7;
 
 /********************************************************************************************************************************************************/
 
+.float-right,
+.float-right a,
+.float-right-p {
+    display: block;
+    float: right;
+}
+
 /*****************
 *****PALLETTE*****
 ******************/
@@ -175,8 +183,8 @@ $secondaryGreyBgColor: #d7d7d7;
 **************************************/
 
 .mtBtn {
-    margin: 1.5rem;
     text-align: center;
+    margin: 2rem 0rem;
 }
 
 .mtBtn a {
@@ -410,6 +418,15 @@ $secondaryGreyBgColor: #d7d7d7;
     }
 }
 
+.mtTableBtn {
+    padding: 1rem;
+    a {
+        color: $tertiaryLinkColor;
+        .glyphicon {
+            font-size: 1.5rem;
+        }
+    }
+}
 
 /**********************
 ***Headings & Titles***
@@ -438,6 +455,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .hrGreyLight {
     border-color: $mtDarkGrey;
 }
+
 .hrRedHeavy {
     border: 1px solid $mtRed;
 }
