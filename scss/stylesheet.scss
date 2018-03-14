@@ -104,6 +104,13 @@ $secondaryGreyBgColor: #d7d7d7;
     float: right;
 }
 
+.float-left,
+.float-left a,
+.float-left-p {
+    display: block;
+    float: left;
+}
+
 /*****************
 *****PALLETTE*****
 ******************/
@@ -225,20 +232,7 @@ $secondaryGreyBgColor: #d7d7d7;
     display: block;
 }
 
-
-@media only screen and (max-width: 1092px) {
-
-    .mtBtn a {
-        font-size: 0.7rem;
-    }
-
-}
-
 @media only screen and (max-width: 992px) {
-
-    .mtBtn a {
-        font-size: 0.7rem;
-    }
 
     .mtBtn,
     .sectionButtons,
@@ -446,7 +440,38 @@ $secondaryGreyBgColor: #d7d7d7;
 }
 
 .titleGrey {
-    color: $mtLightGrey;
+    color: $mtDarkGrey;
+}
+
+.titleRedHeavy {
+    color: $mtRed;
+    font-weight: bold;
+}
+
+.titleBlueHeavy {
+    color: $mtBlue;
+    font-weight: bold;
+}
+
+.titleGreyHeavy {
+    color: $mtDarkGrey;
+    font-weight: bold;
+}
+
+.titleHoverRed:hover {
+    text-decoration: none;
+    color: $mtRed;
+    cursor: pointer;
+}
+.titleHoverBlue:hover {
+    text-decoration: none;
+    color: $mtBlue;
+    cursor: pointer;
+}
+.titleHoverGrey:hover {
+    text-decoration: none;
+    color: $mtDarkGrey;
+    cursor: pointer;
 }
 
 .hrRedLight {
@@ -472,6 +497,7 @@ $secondaryGreyBgColor: #d7d7d7;
 .hrGreyHeavy {
     border: 1px solid $mtLightGrey;
 }
+
 
 /********************************************************************************************************************************************************/
 
@@ -809,4 +835,60 @@ Multiply Bars*/
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 25px;
+}
+
+/********************************************************************************************************************************************************/
+
+/*******************
+Multiply Input Form*/
+
+.mtInputFormLight {
+    border: 1px solid $mtLightGrey;
+    background-color: $mtWhite;
+    padding: 3rem;
+    border-radius: 25px;
+}
+
+.mtInputFormDark {
+    background-color: $mtOffWhite;
+    padding: 3rem;
+    border-radius: 25px;
+}
+
+.mtInputLabel {
+    font-weight: lighter;
+    color: $mtMedGrey;
+}
+
+.mtInputGroup {
+    max-height: 8rem;
+}
+
+.mtInputBar {
+    border-radius: 25px;
+}
+
+.mtDropdownBtn {
+    padding: 0.5rem 0rem;
+    width: 100%;
+    text-align: left;
+    border-radius: 25px;
+}
+
+.mtCaret {
+    float: right;
+    margin: 1rem;
+}
+
+
+/********************************************************************************************************************************************************/
+/*************************    This contains the styles that are used to display the content for unique money management.
+*****MONEY MANAGEMENT*****
+*************************/
+
+.mtCard {
+    border: 1px solid;
+    padding: 4rem;
+    border-radius: 25px;
+    width: 425px;
 }
