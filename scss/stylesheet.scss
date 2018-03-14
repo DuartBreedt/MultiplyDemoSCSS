@@ -421,9 +421,14 @@ $secondaryGreyBgColor: #d7d7d7;
 .mtTableBtn {
     padding: 1rem;
     a {
-        color: $tertiaryLinkColor;
+        color: $mtBlack;
+        transition: all 0.3s ease;
         .glyphicon {
             font-size: 1.5rem;
+        }
+        &:hover {
+            color: $mtDarkGrey;
+            text-decoration: none;
         }
     }
 }
