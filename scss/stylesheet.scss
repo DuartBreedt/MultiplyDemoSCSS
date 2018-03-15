@@ -95,8 +95,6 @@ $redBgColor: #e11b22;
 $primaryGreyBgColor: #ededed;
 $secondaryGreyBgColor: #d7d7d7;
 
-/********************************************************************************************************************************************************/
-
 .float-right,
 .float-right a,
 .float-right-p {
@@ -111,9 +109,9 @@ $secondaryGreyBgColor: #d7d7d7;
     float: left;
 }
 
-/*****************
-*****PALLETTE*****
-******************/
+/*********************************************************************************************************************************************************
+Color Pallette
+*********************************************************************************************************************************************************/
 
 .colorPallette div p {
     padding: 2rem;
@@ -180,11 +178,9 @@ $secondaryGreyBgColor: #d7d7d7;
     background-color: $mtOrange;
 }
 
-/********************************************************************************************************************************************************/
-
-/****************
-*****BUTTONS*****
-*****************/
+/*********************************************************************************************************************************************************
+Buttons
+*********************************************************************************************************************************************************/
 
 /*MULTIPLY BUTTON SHAPING AND ANIMATION
 **************************************/
@@ -281,6 +277,8 @@ $secondaryGreyBgColor: #d7d7d7;
         text-decoration: none;
     }
 }
+
+
 
 /*STATUS MULTIPLY BUTTONS
 **************************/
@@ -427,86 +425,128 @@ $secondaryGreyBgColor: #d7d7d7;
     }
 }
 
-/**********************
-***Headings & Titles***
-**********************/
+/*********************************************************************************************************************************************************
+Button Groups
+*********************************************************************************************************************************************************/
 
-.titleRed {
-    color: $mtRed;
-}
+/*Multiply Button Group*/
 
-.titleBlue {
-    color: $mtBlue;
-}
-
-.titleGrey {
-    color: $mtDarkGrey;
-}
-
-.titleRedHeavy {
-    color: $mtRed;
-    font-weight: bold;
-}
-
-.titleBlueHeavy {
-    color: $mtBlue;
-    font-weight: bold;
+.mtLeftBtnPrimary {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    padding: 10px 40px;
+    text-shadow: none;
+    transition: 0.5s;
+    &:hover {
+        color: $mtWhite;
+        background-color: $mtRed;
+        border: 1px solid $mtRed;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-shadow: none;
+    }
 }
 
-.titleGreyHeavy {
-    color: $mtDarkGrey;
-    font-weight: bold;
+.mtMiddleBtnPrimary {
+    padding: 10px 40px;
+    text-shadow: none;
+    transition: 0.5s;
+    &:hover {
+        color: $mtWhite;
+        background-color: $mtRed;
+        border: 1px solid $mtRed;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-shadow: none;
+    }
 }
 
-.titleHoverRed:hover {
-    text-decoration: none;
-    color: $mtRed;
-    cursor: pointer;
-}
-.titleHoverBlue:hover {
-    text-decoration: none;
-    color: $mtBlue;
-    cursor: pointer;
-}
-.titleHoverGrey:hover {
-    text-decoration: none;
-    color: $mtDarkGrey;
-    cursor: pointer;
-}
-
-.hrRedLight {
-    border-color: $mtRed;
+.mtRightBtnPrimary {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 10px 40px;
+    text-shadow: none;
+    transition: 0.5s;
+    &:hover {
+        color: $mtWhite;
+        background-color: $mtRed;
+        border: 1px solid $mtRed;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-shadow: none;
+    }
 }
 
-.hrBlueLight {
-    border-color: $mtBlue;
-}
-
-.hrGreyLight {
-    border-color: $mtDarkGrey;
-}
-
-.hrRedHeavy {
+.activeBtnPrimary {
+    background-color: $mtRed;
+    color: $mtWhite;
     border: 1px solid $mtRed;
 }
 
-.hrBlueHeavy {
-    border: 1px solid $mtBlue;
+.mtLeftBtnSecondary {
+    color: $mtWhite;
+    background-color: $mtRed;
+    border: 1px solid $mtRed;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    padding: 10px 40px;
+    text-shadow: none;
+    transition: 0.5s;
+    &:hover {
+        color: $mtBlack;
+        background-color: $mtWhite;
+        border: 1px solid $mtLightGrey;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-shadow: none;
+    }
 }
 
-.hrGreyHeavy {
+.mtMiddleBtnSecondary {
+    color: $mtWhite;
+    background-color: $mtRed;
+    border: 1px solid $mtRed;
+    padding: 10px 40px;
+    text-shadow: none;
+    transition: 0.5s;
+    &:hover {
+        color: $mtBlack;
+        background-color: $mtWhite;
+        border: 1px solid $mtLightGrey;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-shadow: none;
+    }
+}
+
+.mtRightBtnSecondary {
+    color: $mtWhite;
+    background-color: $mtRed;
+    border: 1px solid $mtRed;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 10px 40px;
+    text-shadow: none;
+    transition: 0.5s;
+    &:hover {
+        color: $mtBlack;
+        background-color: $mtWhite;
+        border: 1px solid $mtLightGrey;
+        padding: 10px 40px;
+        text-decoration: none;
+        text-shadow: none;
+    }
+}
+
+.activeBtnSecondary {
+    background-color: $mtWhite;
+    color: $mtBlack;
     border: 1px solid $mtLightGrey;
 }
 
-
-/********************************************************************************************************************************************************/
-
-/*************************   This contains the styles that are used to display the banner at the top of the page. The banner contains the
-**********BANNER**********   logo, navigation, actions menu, search, and profile menu. This is a good place to begin customizing the
-**************************   look of your theme */
-
-/*** General Banner Styling ***
-*******************************/
+/*********************************************************************************************************************************************************
+Banners
+*********************************************************************************************************************************************************/
 
 /****************
 Multiply Header*/
@@ -598,11 +638,8 @@ Multiply Header*/
 
 }
 
-/* Multiply Header 
+/*Multiply Banners
 ******************/
-
-/******************
-Multiply Ad Banner*/
 
 .multiplyBanner {
     padding: 0px!important;
@@ -682,14 +719,9 @@ Multiply Ad Banner*/
 
 }
 
-/*Multiply Ad Banner
-********************/
-
-/********************************************************************************************************************************************************/
-
-/****************    This contains the styles that are used to display the content on the page.
-*****CONTENT*****
-*****************/
+/*********************************************************************************************************************************************************
+Section Content
+*********************************************************************************************************************************************************/
 
 /*** General Content Styling ***
 *******************************/
@@ -718,11 +750,9 @@ Presentation Templates general Styling*/
     /**/
 }
 
-/*Presentation Templates general Styling
-***************************************/
-
-/*Multiply 4 Pillars
-*******************/
+/*********************************************************************************************************************************************************
+Pillar Content
+*********************************************************************************************************************************************************/
 
 span.glyphicon {
     font-size: 3rem;
@@ -763,12 +793,6 @@ span.glyphicon {
     }
 }
 
-/******************
-Multiply 4 Pillars*/
-
-/**************
-Content Logos*/
-
 .partnerTitle {
     color: black;
 }
@@ -806,15 +830,32 @@ Content Logos*/
     }
 }
 
-/* Partner Links and Buttons Center on the Screen in smaller Resolutions*/
+/*********************************************************************************************************************************************************
+Multiply Partners
+*********************************************************************************************************************************************************/
 
-/*Content Logos
-***************/
+/****************************
+Multiply Parter Hover Groups*/
 
-/********************************************************************************************************************************************************/
+.partnerLogo a img {
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all .3s ease-in-out;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    &:hover {
+        transform: scale(1.1);
+        border: 1px solid $secondaryGreyBgColor;
+        background-color: $primaryGreyBgColor;
+        border-radius: 25px;
+        padding: 1rem;
+    }
+}
 
-/**************
-Multiply Bars*/
+/*********************************************************************************************************************************************************
+Multiply Bars
+*********************************************************************************************************************************************************/
 
 .mtRedBar {
     background-color: $mtRed;
@@ -837,7 +878,157 @@ Multiply Bars*/
     border-radius: 25px;
 }
 
-/********************************************************************************************************************************************************/
+/*********************************************************************************************************************************************************
+Headers, Text & Lines
+*********************************************************************************************************************************************************/
+
+.titleRed {
+    color: $mtRed;
+}
+
+.titleBlue {
+    color: $mtBlue;
+}
+
+.titleGrey {
+    color: $mtDarkGrey;
+}
+
+.titleRedHeavy {
+    color: $mtRed;
+    font-weight: bold;
+}
+
+.titleBlueHeavy {
+    color: $mtBlue;
+    font-weight: bold;
+}
+
+.titleGreyHeavy {
+    color: $mtDarkGrey;
+    font-weight: bold;
+}
+
+.titleHoverRed:hover {
+    text-decoration: none;
+    color: $mtRed;
+    cursor: pointer;
+}
+
+.titleHoverBlue:hover {
+    text-decoration: none;
+    color: $mtBlue;
+    cursor: pointer;
+}
+
+.titleHoverGrey:hover {
+    text-decoration: none;
+    color: $mtDarkGrey;
+    cursor: pointer;
+}
+
+.hrRedLight {
+    border-color: $mtRed;
+}
+
+.hrBlueLight {
+    border-color: $mtBlue;
+}
+
+.hrGreyLight {
+    border-color: $mtDarkGrey;
+}
+
+.hrRedHeavy {
+    border: 1px solid $mtRed;
+}
+
+.hrBlueHeavy {
+    border: 1px solid $mtBlue;
+}
+
+.hrGreyHeavy {
+    border: 1px solid $mtLightGrey;
+}
+
+
+/*Multiply Circles With Text*/
+
+.mtCircleRedLarge {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    display: inline-block;
+    padding: 12rem 1rem;
+    border-radius: 50%;
+    background: $mtRed;
+    color: white;
+    text-align: center;
+}
+
+.mtCircleBlueLarge {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    display: inline-block;
+    padding: 12rem 1rem;
+    border-radius: 50%;
+    background: $mtBlue;
+    color: white;
+    text-align: center;
+}
+
+.mtCircleGreyLarge {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    display: inline-block;
+    padding: 12rem 1rem;
+    border-radius: 50%;
+    background: $mtLightGrey;
+    color: white;
+    text-align: center;
+}
+
+.mtCircleRedSmall {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    display: inline-block;
+    padding: 8rem 1rem;
+    border-radius: 50%;
+    background: $mtRed;
+    color: white;
+    text-align: center;
+}
+
+.mtCircleBlueSmall {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    display: inline-block;
+    padding: 8rem 1rem;
+    border-radius: 50%;
+    background: $mtBlue;
+    color: white;
+    text-align: center;
+}
+
+.mtCircleGreySmall {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    display: inline-block;
+    padding: 8rem 1rem;
+    border-radius: 50%;
+    background: $mtLightGrey;
+    color: white;
+    text-align: center;
+}
+
+/*********************************************************************************************************************************************************
+Input Groups
+*********************************************************************************************************************************************************/
 
 /*******************
 Multiply Input Form*/
@@ -880,11 +1071,12 @@ Multiply Input Form*/
     margin: 1rem;
 }
 
+/*********************************************************************************************************************************************************
+Money Management
+*********************************************************************************************************************************************************/
 
-/********************************************************************************************************************************************************/
-/*************************    This contains the styles that are used to display the content for unique money management.
-*****MONEY MANAGEMENT*****
-*************************/
+/**********************
+Multiply MM Credit Card*/
 
 .mtCard {
     border: 1px solid;
