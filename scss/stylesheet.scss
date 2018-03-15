@@ -68,6 +68,16 @@ $sDBtnColor: #e11b22;
 ***************/
 
 /***********
+***Tables***
+************/
+
+$tableColorGreen: #bbd431;
+$tableColorAmber: #fab219;
+$tableColorRed: #e01f26;
+$tableColorPurple: #712d6a;
+$tableColorBlue: #4167b0;
+
+/***********
 ***FOOTER***
 ************/
 
@@ -1084,3 +1094,67 @@ Multiply MM Credit Card*/
     border-radius: 25px;
     width: 425px;
 }
+
+/*********************************************************************************************************************************************************
+Tables
+*********************************************************************************************************************************************************/
+
+.mtTableTopLeft {
+    border-top-left-radius: 25px;
+}
+
+.mtTableTopRight {
+    border-top-Right-radius: 25px;
+}
+
+.mtTableBottomLeft {
+    border-Bottom-left-radius: 25px;
+}
+
+.mtTableBottomRight {
+    border-bottom-right-radius: 25px;
+}
+
+.mtTable {
+    border: 1px solid $mtLightGrey;
+    padding: 1rem;
+}
+
+/**********************
+Momentum Color Tables*/
+
+.mtTableRed {
+    padding: 1rem;
+    color: $mtWhite;
+    background-color: $tableColorRed;
+    border: 1px solid $tableColorRed;
+}
+
+.mtTableAmber {
+    padding: 1rem;
+    color: $mtWhite;
+    background-color: $tableColorAmber;
+    border: 1px solid $tableColorAmber;
+}
+
+.mtTableGreen {
+    padding: 1rem;
+    color: $mtWhite;
+    background-color: $tableColorGreen;
+    border: 1px solid $tableColorGreen;
+}
+
+.mtTableBlue {
+    padding: 1rem;
+    color: $mtWhite;
+    background-color: $tableColorBlue;
+    border: 1px solid $tableColorBlue;
+}
+
+.mtTablePurple {
+    padding: 1rem;
+    color: $mtWhite;
+    background-color: $tableColorPurple;
+    border: 1px solid $tableColorPurple;
+}
+
